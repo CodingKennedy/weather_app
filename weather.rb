@@ -14,16 +14,17 @@ post '/weather' do
   @post = params[:post]['location']
 
   @weather = (client.lookup_by_location(@post).condition['temp'] * 9) /5 +32
-
+  @condition = weather = client.lookup_by_location(@post).condition['text']
   "#{@weather}"
-   if (@weather > 80)
-        erb :hot
-    elsif (@weather <= 60)
-        erb :cold
-    elsif (@weather <= 32)
-        erb :freezing
-    elsif (@weather < 80)
-        erb :normal
+  "#{@condition}"
+    if (@condition > 'Sunny')
+        erb :sunny
+    elsif (@condition <= 'Cloudy')
+        erb :cloudy
+         elsif (@condition <= ' Mostly Cloudy')
+        erb :cloudy
+    elsif (@condition <= 'Snowy')
+        erb :snowy
     else
         erb :default
     end
