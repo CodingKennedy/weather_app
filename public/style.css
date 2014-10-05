@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  background: url('images/map.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: helvetica;
+}
+
+input {
+  border: 4px;
+  padding: 10px;
+  font-size: 18px;
+}
+div {
+/*  width: 1000px;
+  height:1000px;*/
+  background-size: cover;
+  background-position: center;
+  margin: 100px;
+}
+h1{
+  background-position: center;
+}
+#intro{
+  font-size: 55px;
+}
+#default{
+  background: url('images/map.png');
+}
+#cloudy{
+  background: url('images/cloudy.png');
+}
+#fair{
+  background: url('images/sunny.png');
+}
+#rain{
+  background: url('images/rain.png');
+}
+#snowy{
+  background: url('images/snowy.png');
+}
+#sunny{
+  background: url('images/sunny.png');
+}
+
