@@ -16,20 +16,24 @@ post '/weather' do
   @weather = (client.lookup_by_location(@post).condition['temp'] * 9) /5 +32
   @condition = weather = client.lookup_by_location(@post).condition['text']
   "#{@weather}"
-  "#{@condition}"
-    if (@condition > 'Sunny')
+  "#{@condition.to_s}"
+    if (@condition == 'Sunny')
         erb :sunny
-    elsif (@condition <= 'Fair')
+    elsif (@condition == 'Fair')
         erb :sunny
-    elsif (@condition <= 'Cloudy')
+    elsif (@condition == 'Cloudy')
         erb :cloudy
-    elsif (@condition <= 'Rain')
+    elsif (@condition == 'Rain')
         erb :rain
-      elsif (@condition <= ' Light Rain')
+    elsif (@condition == 'Mist')
         erb :rain
-    elsif (@condition <= 'Mostly Cloudy')
+    elsif (@condition == 'Light Rain')
+        erb :rain
+    elsif (@condition == 'Mostly Cloudy')
         erb :cloudy
-    elsif (@condition <= 'Snowy')
+    elsif (@condition == 'Partly Cloudy')
+        erb :cloudy
+    elsif (@condition == 'Snowy')
         erb :snowy
     else
         erb :default
