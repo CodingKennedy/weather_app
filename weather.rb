@@ -14,7 +14,7 @@ post '/weather' do
   @post = params[:post]['location']
 
   @weather = (client.lookup_by_location(@post).condition['temp'] * 9) /5 +32
-  @condition = weather = client.lookup_by_location(@post).condition['text']
+  @condition = client.lookup_by_location(@post).condition['text']
   "#{@weather}"
   "#{@condition.to_s}"
     if (@condition == 'Sunny')
