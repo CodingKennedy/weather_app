@@ -16,7 +16,7 @@ GEM
       nokogiri
 
 PLATFORMS
-  x64-mingw32
+  ruby
 
 DEPENDENCIES
   sinatra
