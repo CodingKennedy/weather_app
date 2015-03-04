@@ -1,3 +1,4 @@
-source 'http://www.rubygems.org'
+source :rubygems
+
 gem 'sinatra'
 gem 'yahoo_weatherman'
