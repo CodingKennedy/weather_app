@@ -15,43 +15,45 @@ input {
 div {
   background-size: cover;
   background-position: center;
-
 }
 h1{
   background-position: center;
-}
-#intro{
   font-size: 55px;
+  font-family: 'Slabo 27px', serif;
 }
+h2{
+  background-position: center;
+  font-size: 45px;
+  font-family: 'Slabo 27px', serif;
+}
+p{
+  background-position: center;
+  font-family: 'Slabo 27px', serif;
+}
+
 #default{
-  background: url('images/map.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('images/map.png') no-repeat center center fixed;  ;
+
 }
 #cloudy{
-  background: url('images/cloudy.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('images/cloudy.png') no-repeat center center fixed; ;
+
 }
 #fair{
-  background: url('images/sunny.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('images/sunny.png') no-repeat center center fixed; ;
+
 }
 #rain{
-  background: url('images/rain.png');
+  background: url('images/rain.png') no-repeat center center fixed; ;
    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 #snowy{
-  background: url('images/snowy.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('images/snowy.png') no-repeat center center fixed; ;
+
 }
 #sunny{
-  background: url('images/sunny.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url('images/sunny.png') no-repeat center center fixed; ;
+
 }
 
